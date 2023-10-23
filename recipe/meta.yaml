@@ -27,6 +27,7 @@ requirements:
     - libcxx
   run:
     - python
+    - libcxx
 
 test:
   imports:
