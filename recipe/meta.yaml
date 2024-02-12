@@ -1,5 +1,5 @@
 {% set name = "geoarrow-c" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geoarrow-c-{{ version }}.tar.gz
-  sha256: 71ca8e779214769d8ddd28348a96a26ebe43203ba9a9c578e55d6bdab7494381
+  sha256: 73be8739c10c7c2261c54ddca77c977c71ee4285af4b3d812c12192bd1f46a24
 
 build:
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
